@@ -12,3 +12,4 @@ initialize an empty array of predetermined size
 another loop go through each element of the array and divide each element out of the product
 and store it into the new array
 then return it
+  
