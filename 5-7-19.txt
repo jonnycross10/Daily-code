@@ -1,0 +1,14 @@
+Psuedo code:
+given array of integers
+every element is multiplied by the product of all elements / current element.
+And is returned as a new array
+
+arraymethod accepts an array
+
+loops through each element of the array
+    find the product and size of array and store it in a variables local to the method
+
+initialize an empty array of predetermined size
+another loop go through each element of the array and divide each element out of the product
+and store it into the new array
+then return it
