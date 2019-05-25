@@ -1,0 +1,27 @@
+Question: 
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by Google.
+
+Given an array of integers and a number k, where 1 <= k <= length of the array, compute the maximum values of each subarray of length k.
+
+For example, given array = [10, 5, 2, 7, 8, 7] and k = 3, we should get: [10, 7, 8, 8], since:
+
+10 = max(10, 5, 2)
+7 = max(5, 2, 7)
+8 = max(2, 7, 8)
+8 = max(7, 8, 7)
+Do this in O(n) time and O(k) space. You can modify the input array in-place and you do not need to store the results. You can simply print them out as you compute them.
+
+psuedocode:
+Passed in an array of length L
+And k value of K
+Where K is what we loop to
+
+How many times we loop through array given length and k
+Print out max of the k number of values in the array
+
+k=1  loop length of array			loop length of array - (k-1)
+k=2 loop length of array -1			set starting and ending of temp array +1
+k=3 loop length of array -2
+
