@@ -1,0 +1,36 @@
+Question: This problem was asked by Amazon.
+
+Given a N by M matrix of numbers, print out the matrix in a clockwise spiral.
+
+For example, given the following matrix:
+
+[[1,  2,  3,  4,  5],
+ [6,  7,  8,  9,  10],
+ [11, 12, 13, 14, 15],
+ [16, 17, 18, 19, 20]]
+ 
+You should print out the following:
+
+1 2 3 4 5 10 15 20 19 18 17 16 11 6 7 8 9 14 13 12
+
+psuedo code:
+get the dimensions of the matrix
+make a case for top, right, bottom, left that will change what's printing
+
+count counts how many rows you've printed so far
+while count!= m+n
+topRow = m; rightcolumn= n; bottomRow = m; leftcolumn = n;
+start: top = true, right = true, bottom = true 
+print array[0]
+same lastC, lastR+1, loop from lastRow+1
+
+same lastR, lastC+1 loop from lastC+1 to topRow top row, top row --, update lastR and lasC
+
+top row, take last coordinate start from the right one loop column from same as last row, column +1 to count
+
+
+[[1,  2,  3,  4,  5],
+ [6,  7,  8,  9,  10],
+ [11, 12, 13, 14, 15],
+ [16, 17, 18, 19, 20]
+ [21, 22, 23, 24, 25]]
