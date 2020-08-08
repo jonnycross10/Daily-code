@@ -1,0 +1,16 @@
+#find how many squared numbers you need to add to a given number
+
+import numpy
+def squareAmount(num, count =0):
+  if(num!= 0):
+    closest = numpy.floor(numpy.sqrt(num))
+    return(squareAmount(num- closest**2,count+1))
+  else:
+    return(count)
+
+
+print(squareAmount(5))
+print(squareAmount(10))
+print(squareAmount(100))
+print(squareAmount(1000))
+print(squareAmount(100203023023))
