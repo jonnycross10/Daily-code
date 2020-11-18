@@ -1,0 +1,27 @@
+#for q 1
+keys = [37, 88, 77, 3, 20, 85, 51, 27, 39, 31, 74]
+tableSize = 5
+values = [16, 9, 74, 55, 58, 73, 23, 75, 79, 92, 93]
+
+#for q 2
+newKeys = [85,20,31,51,27,77,37,3,88,74,39]
+newTableSize= 13
+newValues = []
+
+store = []
+
+def hashKeys(keys, tableSize):
+  for i in keys:
+    store.append(i%tableSize)
+  return store
+
+print(hashKeys(newKeys,newTableSize))
+
+
+
+
+for i in range(0,len(keys)):
+  print(str(newKeys[i])+ "->" + str(hashKeys(newKeys,newTableSize)[i])  + "->" + str(values[i]))
+
+
+
